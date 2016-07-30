@@ -112,7 +112,7 @@ class ModelMetaclass(type):
         logging.info('found model: %s (table: %s)' % (name, tableName))
         mappings = dict()
         fields = []
-        primary_key = None
+        primaryKey = None
         for k, v in attrs.items():
             if isinstance(v, Field):
                 logging.info(' found mapping: %s ==> %s' % (k, v))
